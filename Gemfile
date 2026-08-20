@@ -4,11 +4,7 @@ source "https://rubygems.org"
 
 gem "jekyll-theme-chirpy", "~> 7.6"
 
-gem "html-proofer", "~> 5.0", group: :test
-
-platforms :windows, :jruby do
-  gem "tzinfo", ">= 1", "< 3"
-  gem "tzinfo-data"
+group :test do
+  gem "html-proofer", "~> 5.0"
+  gem "jekyll-feed", "~> 0.17.0"
 end
-
-gem "wdm", "~> 0.2.0", :platforms => [:windows]
